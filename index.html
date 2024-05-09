@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de médicaments</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recherche de médicaments</h1>
+        <input type="text" id="searchInput" placeholder="Entrez le nom du médicament">
+        <button onclick="searchMedicament()">Rechercher</button>
+        <button onclick="accessCamera()">Rechercher par caméra</button>
+        <div id="results"></div>
+        <div id="cameraFrame" style="display:none;">
+            <h2>Camera</h2>
+            <div id="cameraContainer">
+                <video id="cameraFeed" autoplay playsinline></video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
